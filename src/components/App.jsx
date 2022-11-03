@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Main from './main'
+import Main from './Main'
 
 // import continentData from '../../data/continents'
 
@@ -13,6 +13,7 @@ function App() {
           {/* This 'main' div is only for styling (so we can use flexbox) */}
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/round1" element={<Round />} />
           </Routes>
         </div>
       </div>
