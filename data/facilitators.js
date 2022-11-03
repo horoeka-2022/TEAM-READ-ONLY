@@ -2,44 +2,44 @@ export default [
   {
     ahmad: {
       name: 'Ahmad',
-      profileImage: '/images/ahmad.png',
+      profileImage: '/images/ahmad-profile.jpg',
       celeb: {
-        femaleImage: '/images/ahmad-female.png',
-        maleImage: '/images/ahmad-male.png',
-        best: '/images/ahmad-best.png',
+        femaleImage: '/images/ahmad-millie-bobby-brown.jpg',
+        maleImage: '/images/ahmad-andrew-scott.jpg',
+        mergedImage: '/images/ahmad-merge-celeb.jpg'
       },
     },
   },
   {
     alex: {
       name: 'Alex',
-      profileImage: '/images/alex.png',
+      profileImage: '/images/alex-profile.jpg',
       celeb: {
-        femaleImage: '/images/alex-female.png',
-        maleImage: '/images/alex-male.png',
-        best: '/images/alex-best.png',
+        femaleImage: '/images/alex-karine-vanasse.jpg',
+        maleImage: '/images/alex-adam-garcia.jpg',
+        mergedImage: '/images/alex-merge-celeb.jpg'
       },
     },
   },
   {
     clem: {
       name: 'Clementine',
-      profileImage: '/images/clem.png',
+      profileImage: '/images/clem-profile.jpg',
       celeb: {
-        femaleImage: '/images/clem-female.png',
-        maleImage: '/images/clem-male.png',
-        best: '/images/clem-best.png',
+        femaleImage: '/images/clem-kelly-clarkson.jpg',
+        maleImage: '/images/clem-masi-oka.jpg',
+        mergedImage: '/images/clem-merge-celeb.jpg'
       },
     },
   },
   {
     johnny: {
       name: 'Johnny',
-      profileImage: '/images/johnny.png',
+      profileImage: '/images/johnny-profile.jpg',
       celeb: {
-        femaleImage: '/images/johnny-female.png',
-        maleImage: '/images/johnny-male.png',
-        best: '/images/johnny-best.png',
+        femaleImage: '/images/johnny-greta-gerwig.jpg',
+        maleImage: '/images/johnny-jason-lee.jpg',
+        mergedImage: '/images/johnny-merge-celeb.jpg'
       },
     },
   },
