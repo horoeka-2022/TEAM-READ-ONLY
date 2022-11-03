@@ -38,6 +38,7 @@ function App() {
           {/* This 'main' div is only for styling (so we can use flexbox) */}
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/round1" element={<Round />} />
           </Routes>
         </div>
       </div>
