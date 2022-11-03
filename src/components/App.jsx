@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
+
+import Round from './Round'
+
+// import data from '../../data/facilitators'
+// import iconData from '../../server/public/icons'
+// import soundData from '../../server/public/sounds'
 import Main from './Main'
-import data from '../../data/facilitators'
+
 
 function App() {
   function shuffle(array) {
@@ -32,15 +38,14 @@ function App() {
   const [finalist, setFinalist] = useState([])
   return (
     <>
-      <div className="flex justify-center">
-        <div className="flex-col">
-          <h1>Star facilitators</h1>
-          {/* This 'main' div is only for styling (so we can use flexbox) */}
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/round1" element={<Round />} />
-          </Routes>
-        </div>
+
+      {/* This 'main' div is only for styling (so we can use flexbox) */}
+      <div className="main">
+        <Routes>
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/round" element={<Round />} />
+        </Routes>
+
       </div>
     </>
   )
