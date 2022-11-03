@@ -7,13 +7,14 @@
   "scripts": {
     "build": "npm run webpack -- --mode production",
     "start": "node server",
-    "dev": "run-p client:watch server:watch",
-    "webpack": "webpack --config client/webpack.config.js",
+    "dev": "run-p client:watch server:watch css",
+    "webpack": "webpack --config src/webpack.config.js",
     "server": "node server",
     "client:watch": "npm run webpack -- --watch",
     "server:watch": "nodemon server",
     "test": "jest --watch --noStackTrace",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "css": "npx tailwindcss -i ./server/public/css/styles.css -o ./server/public/css/tailwind.css --watch"
   },
   "babel": {
     "presets": [
