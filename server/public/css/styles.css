@@ -7,8 +7,11 @@
 }
 
 .title {
+  color:aquamarine;
   text-align: center;
   font-size: 100px;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;;
 }
 
 .flex-container {
@@ -28,6 +31,7 @@
 
 .competitor {
   height: 500px;
+  width: auto;
 
 }
 

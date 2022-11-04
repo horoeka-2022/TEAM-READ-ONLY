@@ -28,7 +28,7 @@
 
 .competitor {
   height: 500px;
-
+  object-fit: cover;
 }
 
 .btn-hint {

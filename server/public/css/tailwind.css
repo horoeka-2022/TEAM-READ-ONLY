@@ -673,8 +673,11 @@ video {
 }
 
 .title {
+  color:aquamarine;
   text-align: center;
   font-size: 100px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .flex-container {
@@ -694,6 +697,7 @@ video {
 
 .competitor {
   height: 500px;
+  width: auto;
 }
 
 .btn-hint {
