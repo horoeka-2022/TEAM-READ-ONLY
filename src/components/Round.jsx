@@ -124,6 +124,8 @@ function Round(props) {
 
   function nextRound() {
     if (round == 'Round 1') {
+      setIdx1(0)
+      setIdx2(0)
       setRound('Round 2')
       setBg('bg-round2')
       setImg1(props.round2[0].profileImage)
@@ -132,6 +134,8 @@ function Round(props) {
         return [...prev, props.round1[0]]
       })
     } else if (round == 'Round 2') {
+      setIdx1(0)
+      setIdx2(0)
       setRound('Final Round')
       setBg('bg-final-round')
       console.log(finalist)
@@ -147,6 +151,8 @@ function Round(props) {
   }
   function nextRound2() {
     if (round == 'Round 1') {
+      setIdx1(0)
+      setIdx2(0)
       setRound('Round 2')
       setBg('bg-round2')
       setImg1(props.round2[0].profileImage)
@@ -155,6 +161,8 @@ function Round(props) {
         return [...prev, props.round1[1]]
       })
     } else if (round == 'Round 2') {
+      setIdx1(0)
+      setIdx2(0)
       setRound('Final Round')
       setBg('bg-final-round')
       console.log(finalist)
