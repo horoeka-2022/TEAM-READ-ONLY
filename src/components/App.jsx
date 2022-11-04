@@ -6,8 +6,6 @@ import Round from './Round'
 // import data from '../../data/facilitators'
 // import iconData from '../../server/public/icons'
 // import soundData from '../../server/public/sounds'
-import Main from './Main'
-
 
 function App() {
   function shuffle(array) {
@@ -38,14 +36,12 @@ function App() {
   const [finalist, setFinalist] = useState([])
   return (
     <>
-
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/round" element={<Round />} />
         </Routes>
-
       </div>
     </>
   )
