@@ -713,6 +713,7 @@ video {
   height: 200px;
 }
 
+
 .btn-start {
   font-size: 50px;
   background-color:hotpink;
@@ -724,5 +725,24 @@ video {
 
 .bg-img{
   background-image: url(/images/clem-profile.jpg);
+
+.bg-round1 {
+  background-image: url('/background/sf-background1');
+  background-size: cover;
+}
+
+.bg-round2 {
+  background-image: url('/background/sf-background4');
+  background-size: cover;
+}
+
+.bg-final-round {
+  background-image: url('/background/sf-backgroundlava.gif');
+  background-size: cover;
+}
+
+.bg-winner {
+  background-image: url('/background/sf-background2');
+
   background-size: cover;
 }
