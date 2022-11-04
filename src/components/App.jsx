@@ -31,14 +31,19 @@ function App() {
   const round2Contestants = [facilitators[2], facilitators[3]]
 
   // console.log(round1Contestants, round2Contestants)
-  const [finalist, setFinalist] = useState([])
+
   return (
     <>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/round" element={<Round data={round1Contestants} />} />
+          <Route
+            path="/round"
+            element={
+              <Round round1={round1Contestants} round2={round2Contestants} />
+            }
+          />
         </Routes>
       </div>
     </>
