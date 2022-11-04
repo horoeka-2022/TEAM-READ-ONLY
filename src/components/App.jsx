@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import Round from './Round'
@@ -38,7 +38,6 @@ function App() {
   ]
 
   // console.log(round1Contestants, round2Contestants)
-  const [finalist, setFinalist] = useState([])
 
   return (
     <>
@@ -46,7 +45,12 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home data={allFacilitators} />} />
-          <Route path="/round" element={<Round data={round1Contestants} />} />
+          <Route
+            path="/round"
+            element={
+              <Round round1={round1Contestants} round2={round2Contestants} />
+            }
+          />
         </Routes>
       </div>
     </>
