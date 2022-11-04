@@ -713,12 +713,6 @@ video {
   height: 200px;
 }
 
-/* extend: {
-  .backgroundImage: {
-    'hero': "url('../public/background/sf-background1')",
-  },
-} */
-
 .bg-round1 {
   background-image: url('/background/sf-background1');
   background-size: cover;
@@ -734,3 +728,7 @@ video {
   background-size: cover;
 }
 
+.bg-winner {
+  background-image: url('/background/sf-background2');
+  background-size: cover;
+}
