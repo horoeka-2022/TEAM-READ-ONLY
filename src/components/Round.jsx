@@ -39,6 +39,9 @@ function Round(props) {
         setImg1(props.round1[0].celeb.femaleImage)
         setIdx1(2)
       } else if (ind1 === 2) {
+        setImg1(props.round1[0].celeb.mergedImage)
+        setIdx1(3)
+      } else if (ind1 === 3) {
         setImg1(props.round1[0].profileImage)
         setIdx1(0)
       }
@@ -50,6 +53,9 @@ function Round(props) {
         setImg1(props.round2[0].celeb.femaleImage)
         setIdx1(2)
       } else if (ind1 === 2) {
+        setImg1(props.round2[0].celeb.mergedImage)
+        setIdx1(3)
+      } else if (ind1 === 3) {
         setImg1(props.round2[0].profileImage)
         setIdx1(0)
       }
@@ -61,6 +67,9 @@ function Round(props) {
         setImg1(finalist[0].celeb.femaleImage)
         setIdx1(2)
       } else if (ind1 === 2) {
+        setImg1(finalist[0].celeb.mergedImage)
+        setIdx1(3)
+      } else if (ind1 === 3) {
         setImg1(finalist[0].profileImage)
         setIdx1(0)
       }
@@ -76,6 +85,9 @@ function Round(props) {
         setImg2(props.round1[1].celeb.femaleImage)
         setIdx2(2)
       } else if (ind2 === 2) {
+        setImg2(props.round1[1].celeb.mergedImage)
+        setIdx2(3)
+      } else if (ind2 === 3) {
         setImg2(props.round1[1].profileImage)
         setIdx2(0)
       }
@@ -87,6 +99,9 @@ function Round(props) {
         setImg2(props.round2[1].celeb.femaleImage)
         setIdx2(2)
       } else if (ind2 === 2) {
+        setImg2(props.round2[1].celeb.mergedImage)
+        setIdx2(3)
+      } else if (ind2 === 3) {
         setImg2(props.round2[1].profileImage)
         setIdx2(0)
       }
@@ -98,6 +113,9 @@ function Round(props) {
         setImg2(finalist[1].celeb.femaleImage)
         setIdx2(2)
       } else if (ind2 === 2) {
+        setImg2(finalist[1].celeb.mergedImage)
+        setIdx2(3)
+      } else if (ind2 === 3) {
         setImg2(finalist[1].profileImage)
         setIdx2(0)
       }
