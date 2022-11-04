@@ -49,6 +49,19 @@
 }
 
 
+
+.btn-start {
+  font-size: 50px;
+  background-color:hotpink;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid 2px black;
+  justify-content: center;
+}
+
+.bg-img{
+  background-image: url(/images/clem-profile.jpg);
+
 .bg-round1 {
   background-image: url('/background/sf-background1');
   background-size: cover;
@@ -66,5 +79,6 @@
 
 .bg-winner {
   background-image: url('/background/sf-background2');
+
   background-size: cover;
 }
