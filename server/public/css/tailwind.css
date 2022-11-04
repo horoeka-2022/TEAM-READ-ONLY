@@ -697,7 +697,6 @@ video {
 
 .competitor {
   height: 500px;
-  width: auto;
 }
 
 .btn-hint {
@@ -732,16 +731,18 @@ video {
 
 .bg-round1 {
   height: 100vh;
-  background-image: url('/background/sf-backgroundlava.gif');
+  background-image: url('/background/sf-background1.jpeg');
   background-size: cover;
 }
 
 .bg-round2 {
-  background-image: url('/background/sf-background4');
+  height: 100vh;
+  background-image: url('/background/sf-background4.jpeg');
   background-size: cover;
 }
 
 .bg-final-round {
+  height: 100vh;
   background-image: url('/background/sf-backgroundlava.gif');
   background-size: cover;
 }

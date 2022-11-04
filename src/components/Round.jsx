@@ -5,6 +5,8 @@ import { Link, Outlet } from 'react-router-dom'
 function Round(props) {
   let winner = ''
 
+  const [bg, setBg] = useState('bg-round1')
+
   const [round, setRound] = useState('Round 1')
 
   const [finalist, setFinalist] = useState([])
@@ -105,6 +107,7 @@ function Round(props) {
   function nextRound() {
     if (round == 'Round 1') {
       setRound('Round 2')
+      setBg('bg-round2')
       setImg1(props.round2[0].profileImage)
       setImg2(props.round2[1].profileImage)
       setFinalist((prev) => {
@@ -112,6 +115,7 @@ function Round(props) {
       })
     } else if (round == 'Round 2') {
       setRound('Final Round')
+      setBg('bg-final-round')
       console.log(finalist)
       setImg1(finalist[0].profileImage)
       setImg2(props.round2[0].profileImage)
@@ -126,6 +130,7 @@ function Round(props) {
   function nextRound2() {
     if (round == 'Round 1') {
       setRound('Round 2')
+      setBg('bg-round2')
       setImg1(props.round2[0].profileImage)
       setImg2(props.round2[1].profileImage)
       setFinalist((prev) => {
@@ -133,6 +138,7 @@ function Round(props) {
       })
     } else if (round == 'Round 2') {
       setRound('Final Round')
+      setBg('bg-final-round')
       console.log(finalist)
       setImg1(finalist[0].profileImage)
       setImg2(props.round2[1].profileImage)
@@ -146,7 +152,7 @@ function Round(props) {
   }
 
   return (
-    <div className="bg-round1">
+    <div className={bg}>
       <h2 className="title">{round}</h2>
       <div className="flex-container">
         <div className="profile">
