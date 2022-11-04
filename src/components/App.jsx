@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
-      <div className="bg-hero">
+      <div>
         <Routes>
           <Route path="/" element={<Home data={allFacilitators} />} />
           <Route path="/round" element={<Round data={round1Contestants} />} />

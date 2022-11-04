@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Home(props) {
   return (
-    <div className="bg-img">
+    <div className="bg-img h-screen">
       <h2 className="title">Dear Our Favorite 2022</h2>
       <div className="flex-container">
         <div className="profile">
