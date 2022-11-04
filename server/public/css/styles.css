@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-screen {
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 100px;
+}
+
+.flex-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.competitor {
+  height: 500px;
+
+}
+
+.btn-hint {
+  font-size: 30px;
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.heart {
+  width: 100px;
+}
+
+.vs {
+
+  height: 200px;
+}
+
