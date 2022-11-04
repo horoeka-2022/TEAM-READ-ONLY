@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Round(props) {
   let winner = ''
+
   const [round, setRound] = useState('Round 1')
 
   const [finalist, setFinalist] = useState([])
@@ -145,8 +146,8 @@ function Round(props) {
   }
 
   return (
-    <div className="bg-round1 h-screen">
-      <h2 className="title">Round 1</h2>
+    <div className="bg-round1">
+      <h2 className="title">{round}</h2>
       <div className="flex-container">
         <div className="profile">
           <img className="competitor" src={currentImg1} alt="img" />

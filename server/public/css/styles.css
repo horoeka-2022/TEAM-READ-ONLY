@@ -65,7 +65,8 @@
 }
 
 .bg-round1 {
-  background-image: url('/background/sf-background1.jpeg');
+  height: 100vh;
+  background-image: url('/background/sf-backgroundlava.gif');
   background-size: cover;
 }
 
