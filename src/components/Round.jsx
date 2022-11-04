@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 // import { useParams, Link } from 'react-router-dom'
 
 function Round(props) {
@@ -163,9 +163,10 @@ function Round(props) {
             <img src="/icons/heart2.png" alt="heart img" className="heart" />
           </button>
         </div>
-        <Link to="/winner" data={winner}>
+        <Link to="/winner">
           <img src={'/icons/vs.png'} alt="vs img" className="vs" />
         </Link>
+        <Outlet />
         <div className="profile">
           <img className="competitor" src={currentImg2} alt="img" />
           <button

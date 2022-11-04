@@ -1,10 +1,10 @@
 import React from 'react'
-// import { useParams, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-function Winner(props) {
+function Home(props) {
   return (
     <div className="bg-winner">
-      <h2 className="title">Youre a WINNER baby</h2>
+      <h2 className="title">YOU ARE ALL WINNERS!!!</h2>
       <div className="flex-container">
         <div className="profile">
           <img
@@ -12,11 +12,41 @@ function Winner(props) {
             src={props.data[0].profileImage}
             alt="img"
           />
-          <button className="btn-hint">START AGAIN</button>
         </div>
+
+        <div className="profile">
+          <img
+            className="competitor"
+            src={props.data[1].profileImage}
+            alt="img"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            className="competitor"
+            src={props.data[2].profileImage}
+            alt="img"
+          />
+        </div>
+
+        <div className="profile">
+          <img
+            className="competitor"
+            src={props.data[3].profileImage}
+            alt="img"
+          />
+        </div>
+      </div>
+      <div className="flex-container">
+        <button>
+          <Link to="/round" className="btn-start">
+            START{' '}
+          </Link>
+        </button>
       </div>
     </div>
   )
 }
 
-export default Winner
+export default Home

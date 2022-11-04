@@ -81,7 +81,7 @@
 }
 
 .bg-winner {
-  background-image: url('/background/sf-background2');
-
+  background-image: url('/background/sf-background2.jpeg');
+  height: 100vh;
   background-size: cover;
 }

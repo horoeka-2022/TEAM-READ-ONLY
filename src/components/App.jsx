@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import Round from './Round'
 import Home from './Home'
+import Winner from './Winner'
 
 import data from '../../data/facilitators'
 
@@ -51,6 +52,7 @@ function App() {
               <Round round1={round1Contestants} round2={round2Contestants} />
             }
           />
+          <Route path="/winner" element={<Winner data={allFacilitators} />} />
         </Routes>
       </div>
     </>
