@@ -713,3 +713,24 @@ video {
   height: 200px;
 }
 
+/* extend: {
+  .backgroundImage: {
+    'hero': "url('../public/background/sf-background1')",
+  },
+} */
+
+.bg-round1 {
+  background-image: url('/background/sf-background1');
+  background-size: cover;
+}
+
+.bg-round2 {
+  background-image: url('/background/sf-background4');
+  background-size: cover;
+}
+
+.bg-final-round {
+  background-image: url('/background/sf-backgroundlava.gif');
+  background-size: cover;
+}
+

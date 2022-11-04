@@ -32,10 +32,11 @@ function App() {
 
   // console.log(round1Contestants, round2Contestants)
   const [finalist, setFinalist] = useState([])
+
   return (
     <>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
-      <div className="main">
+      <div className="bg-hero">
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/round" element={<Round data={round1Contestants} />} />

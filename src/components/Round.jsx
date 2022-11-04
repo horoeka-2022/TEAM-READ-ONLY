@@ -6,7 +6,7 @@ function Round(props) {
   // const target = props.continents[name]
   console.log(props)
   return (
-    <div>
+    <div className="bg-hero">
       <h2 className="title">Round 1</h2>
       <div className="flex-container">
         <div className="profile">
