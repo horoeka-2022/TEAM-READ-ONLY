@@ -3,9 +3,13 @@ import { Route, Routes } from 'react-router-dom'
 
 import Round from './Round'
 
+<<<<<<< HEAD
 // import data from '../../data/facilitators'
 // import iconData from '../../server/public/icons'
 // import soundData from '../../server/public/sounds'
+=======
+import data from '../../data/facilitators'
+>>>>>>> 36d59d6ab1bdb6464696dc610a0c404ec900f4a0
 
 function App() {
   function shuffle(array) {
@@ -32,7 +36,7 @@ function App() {
   const round1Contestants = [facilitators[0], facilitators[1]]
   const round2Contestants = [facilitators[2], facilitators[3]]
 
-  console.log(round1Contestants, round2Contestants)
+  // console.log(round1Contestants, round2Contestants)
   const [finalist, setFinalist] = useState([])
   return (
     <>
@@ -40,7 +44,7 @@ function App() {
       <div className="main">
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/round" element={<Round />} />
+          <Route path="/round" element={<Round data={round1Contestants} />} />
         </Routes>
       </div>
     </>

@@ -1,10 +1,10 @@
 import React from 'react'
 // import { useParams, Link } from 'react-router-dom'
 
-function Round() {
+function Round(props) {
   // const { name } = useParams()
   // const target = props.continents[name]
-
+  console.log(props)
   return (
     <div>
       <h2 className="title">Round 1</h2>
@@ -12,7 +12,7 @@ function Round() {
         <div className="profile">
           <img
             className="competitor"
-            src={'/images/alex-profile.jpg'}
+            src={props.data[0].profileImage}
             alt="img"
           />
           <button className="btn-hint">Hint</button>
@@ -24,7 +24,7 @@ function Round() {
         <div className="profile">
           <img
             className="competitor"
-            src={'/images/clem-profile.jpg'}
+            src={props.data[1].profileImage}
             alt="img"
           />
           <button className="btn-hint">Hint</button>
