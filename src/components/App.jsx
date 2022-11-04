@@ -1,30 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-import Nav from './Nav'
-import Home from './Home'
-import Continent from './Continent'
-import Country from './Country'
+import Round from './Round'
 
-// import continentData from '../../data/continents'
+
+import data from '../../data/facilitators'
+
 
 function App() {
+  function shuffle(array) {
+    let currentIndex = array.length,
+      randomIndex
+
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex)
+      currentIndex--
+
+      // And swap it with the current element.
+      ;[array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ]
+    }
+
+    return array
+  }
+
+  const facilitators = shuffle(data)
+  const round1Contestants = [facilitators[0], facilitators[1]]
+  const round2Contestants = [facilitators[2], facilitators[3]]
+
+  // console.log(round1Contestants, round2Contestants)
+  const [finalist, setFinalist] = useState([])
   return (
     <>
-      <div className="title">
-        <img
-          src="/images/color_earth.gif"
-          alt="A coloured globe of the earth spinning around on its axis"
-        />
-        <h1>Navigating the worldwide routes</h1>
-      </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className="main">
-        <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="continents/:name" element={<Continent />} />
-          <Route path="/continents/:name/:code" element={<Country />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/round" element={<Round data={round1Contestants} />} />
         </Routes>
       </div>
     </>
