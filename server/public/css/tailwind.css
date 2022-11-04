@@ -611,6 +611,10 @@ video {
   display: none;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -625,11 +629,6 @@ video {
 
 .border {
   border-width: 1px;
-}
-
-.bg-lime-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
 }
 
 .uppercase {
@@ -713,7 +712,6 @@ video {
   height: 200px;
 }
 
-
 .btn-start {
   font-size: 50px;
   background-color:hotpink;
@@ -723,11 +721,13 @@ video {
   justify-content: center;
 }
 
-.bg-img{
-  background-image: url(/images/clem-profile.jpg);
+.bg-img {
+  background-image: url('/background/homepage.gif');
+  background-size: cover;
+}
 
 .bg-round1 {
-  background-image: url('/background/sf-background1');
+  background-image: url('/background/sf-background1.jpeg');
   background-size: cover;
 }
 
@@ -743,6 +743,5 @@ video {
 
 .bg-winner {
   background-image: url('/background/sf-background2');
-
   background-size: cover;
 }

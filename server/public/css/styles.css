@@ -59,11 +59,13 @@
   justify-content: center;
 }
 
-.bg-img{
-  background-image: url(/images/clem-profile.jpg);
+.bg-img {
+  background-image: url('/background/homepage.gif');
+  background-size: cover;
+}
 
 .bg-round1 {
-  background-image: url('/background/sf-background1');
+  background-image: url('/background/sf-background1.jpeg');
   background-size: cover;
 }
 
